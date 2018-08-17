@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46D9C8F92127508400C2021C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C8F82127508400C2021C /* AppDelegate.swift */; };
+		46D9C8FB2127508400C2021C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C8FA2127508400C2021C /* ViewController.swift */; };
+		46D9C8FE2127508400C2021C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C8FC2127508400C2021C /* Main.storyboard */; };
+		46D9C9002127508500C2021C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C8FF2127508500C2021C /* Assets.xcassets */; };
+		46D9C9032127508500C2021C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C9012127508500C2021C /* LaunchScreen.storyboard */; };
+		46D9C90E2127508600C2021C /* Tap_That_BeatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C90D2127508600C2021C /* Tap_That_BeatTests.swift */; };
+		46D9C9192127508600C2021C /* Tap_That_BeatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C9182127508600C2021C /* Tap_That_BeatUITests.swift */; };
+		46D9C91E2127508600C2021C /* Tap That Beat WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 46D9C91D2127508600C2021C /* Tap That Beat WatchKit App.app */; };
+		46D9C9242127508600C2021C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C9222127508600C2021C /* Interface.storyboard */; };
+		46D9C9262127508700C2021C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C9252127508700C2021C /* Assets.xcassets */; };
+		46D9C92D2127508700C2021C /* Tap That Beat WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46D9C92C2127508700C2021C /* Tap That Beat WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46D9C9322127508700C2021C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C9312127508700C2021C /* InterfaceController.swift */; };
+		46D9C9342127508700C2021C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C9332127508700C2021C /* ExtensionDelegate.swift */; };
+		46D9C9362127508700C2021C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C9352127508700C2021C /* NotificationController.swift */; };
+		46D9C9382127508800C2021C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C9372127508800C2021C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46D9C90A2127508600C2021C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D9C8ED2127508400C2021C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D9C8F42127508400C2021C;
+			remoteInfo = "Tap That Beat";
+		};
+		46D9C9152127508600C2021C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D9C8ED2127508400C2021C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D9C8F42127508400C2021C;
+			remoteInfo = "Tap That Beat";
+		};
+		46D9C91F2127508600C2021C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D9C8ED2127508400C2021C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D9C91C2127508600C2021C;
+			remoteInfo = "Tap That Beat WatchKit App";
+		};
+		46D9C92E2127508700C2021C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D9C8ED2127508400C2021C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D9C92B2127508700C2021C;
+			remoteInfo = "Tap That Beat WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		46D9C9402127508800C2021C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				46D9C92D2127508700C2021C /* Tap That Beat WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D9C9442127508800C2021C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				46D9C91E2127508600C2021C /* Tap That Beat WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		46D9C8F52127508400C2021C /* Tap That Beat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap That Beat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D9C8F82127508400C2021C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46D9C8FA2127508400C2021C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46D9C8FD2127508400C2021C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46D9C8FF2127508500C2021C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46D9C9022127508500C2021C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46D9C9042127508500C2021C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D9C9092127508600C2021C /* Tap That BeatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap That BeatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D9C90D2127508600C2021C /* Tap_That_BeatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_That_BeatTests.swift; sourceTree = "<group>"; };
+		46D9C90F2127508600C2021C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D9C9142127508600C2021C /* Tap That BeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap That BeatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D9C9182127508600C2021C /* Tap_That_BeatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_That_BeatUITests.swift; sourceTree = "<group>"; };
+		46D9C91A2127508600C2021C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D9C91D2127508600C2021C /* Tap That Beat WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap That Beat WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D9C9232127508600C2021C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		46D9C9252127508700C2021C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46D9C9272127508700C2021C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D9C92C2127508700C2021C /* Tap That Beat WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tap That Beat WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D9C9312127508700C2021C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		46D9C9332127508700C2021C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		46D9C9352127508700C2021C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		46D9C9372127508800C2021C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46D9C9392127508800C2021C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D9C93A2127508800C2021C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46D9C8F22127508400C2021C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D9C9062127508600C2021C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D9C9112127508600C2021C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D9C9292127508700C2021C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46D9C8EC2127508400C2021C = {
+			isa = PBXGroup;
+			children = (
+				46D9C8F72127508400C2021C /* Tap That Beat */,
+				46D9C90C2127508600C2021C /* Tap That BeatTests */,
+				46D9C9172127508600C2021C /* Tap That BeatUITests */,
+				46D9C9212127508600C2021C /* Tap That Beat WatchKit App */,
+				46D9C9302127508700C2021C /* Tap That Beat WatchKit Extension */,
+				46D9C8F62127508400C2021C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46D9C8F62127508400C2021C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46D9C8F52127508400C2021C /* Tap That Beat.app */,
+				46D9C9092127508600C2021C /* Tap That BeatTests.xctest */,
+				46D9C9142127508600C2021C /* Tap That BeatUITests.xctest */,
+				46D9C91D2127508600C2021C /* Tap That Beat WatchKit App.app */,
+				46D9C92C2127508700C2021C /* Tap That Beat WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46D9C8F72127508400C2021C /* Tap That Beat */ = {
+			isa = PBXGroup;
+			children = (
+				46D9C8F82127508400C2021C /* AppDelegate.swift */,
+				46D9C8FA2127508400C2021C /* ViewController.swift */,
+				46D9C8FC2127508400C2021C /* Main.storyboard */,
+				46D9C8FF2127508500C2021C /* Assets.xcassets */,
+				46D9C9012127508500C2021C /* LaunchScreen.storyboard */,
+				46D9C9042127508500C2021C /* Info.plist */,
+			);
+			path = "Tap That Beat";
+			sourceTree = "<group>";
+		};
+		46D9C90C2127508600C2021C /* Tap That BeatTests */ = {
+			isa = PBXGroup;
+			children = (
+				46D9C90D2127508600C2021C /* Tap_That_BeatTests.swift */,
+				46D9C90F2127508600C2021C /* Info.plist */,
+			);
+			path = "Tap That BeatTests";
+			sourceTree = "<group>";
+		};
+		46D9C9172127508600C2021C /* Tap That BeatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46D9C9182127508600C2021C /* Tap_That_BeatUITests.swift */,
+				46D9C91A2127508600C2021C /* Info.plist */,
+			);
+			path = "Tap That BeatUITests";
+			sourceTree = "<group>";
+		};
+		46D9C9212127508600C2021C /* Tap That Beat WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				46D9C9222127508600C2021C /* Interface.storyboard */,
+				46D9C9252127508700C2021C /* Assets.xcassets */,
+				46D9C9272127508700C2021C /* Info.plist */,
+			);
+			path = "Tap That Beat WatchKit App";
+			sourceTree = "<group>";
+		};
+		46D9C9302127508700C2021C /* Tap That Beat WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				46D9C9312127508700C2021C /* InterfaceController.swift */,
+				46D9C9332127508700C2021C /* ExtensionDelegate.swift */,
+				46D9C9352127508700C2021C /* NotificationController.swift */,
+				46D9C9372127508800C2021C /* Assets.xcassets */,
+				46D9C9392127508800C2021C /* Info.plist */,
+				46D9C93A2127508800C2021C /* PushNotificationPayload.apns */,
+			);
+			path = "Tap That Beat WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46D9C8F42127508400C2021C /* Tap That Beat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D9C9452127508800C2021C /* Build configuration list for PBXNativeTarget "Tap That Beat" */;
+			buildPhases = (
+				46D9C8F12127508400C2021C /* Sources */,
+				46D9C8F22127508400C2021C /* Frameworks */,
+				46D9C8F32127508400C2021C /* Resources */,
+				46D9C9442127508800C2021C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46D9C9202127508600C2021C /* PBXTargetDependency */,
+			);
+			name = "Tap That Beat";
+			productName = "Tap That Beat";
+			productReference = 46D9C8F52127508400C2021C /* Tap That Beat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46D9C9082127508600C2021C /* Tap That BeatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D9C9482127508800C2021C /* Build configuration list for PBXNativeTarget "Tap That BeatTests" */;
+			buildPhases = (
+				46D9C9052127508600C2021C /* Sources */,
+				46D9C9062127508600C2021C /* Frameworks */,
+				46D9C9072127508600C2021C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46D9C90B2127508600C2021C /* PBXTargetDependency */,
+			);
+			name = "Tap That BeatTests";
+			productName = "Tap That BeatTests";
+			productReference = 46D9C9092127508600C2021C /* Tap That BeatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46D9C9132127508600C2021C /* Tap That BeatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D9C94B2127508800C2021C /* Build configuration list for PBXNativeTarget "Tap That BeatUITests" */;
+			buildPhases = (
+				46D9C9102127508600C2021C /* Sources */,
+				46D9C9112127508600C2021C /* Frameworks */,
+				46D9C9122127508600C2021C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46D9C9162127508600C2021C /* PBXTargetDependency */,
+			);
+			name = "Tap That BeatUITests";
+			productName = "Tap That BeatUITests";
+			productReference = 46D9C9142127508600C2021C /* Tap That BeatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		46D9C91C2127508600C2021C /* Tap That Beat WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D9C9412127508800C2021C /* Build configuration list for PBXNativeTarget "Tap That Beat WatchKit App" */;
+			buildPhases = (
+				46D9C91B2127508600C2021C /* Resources */,
+				46D9C9402127508800C2021C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46D9C92F2127508700C2021C /* PBXTargetDependency */,
+			);
+			name = "Tap That Beat WatchKit App";
+			productName = "Tap That Beat WatchKit App";
+			productReference = 46D9C91D2127508600C2021C /* Tap That Beat WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		46D9C92B2127508700C2021C /* Tap That Beat WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D9C93D2127508800C2021C /* Build configuration list for PBXNativeTarget "Tap That Beat WatchKit Extension" */;
+			buildPhases = (
+				46D9C9282127508700C2021C /* Sources */,
+				46D9C9292127508700C2021C /* Frameworks */,
+				46D9C92A2127508700C2021C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tap That Beat WatchKit Extension";
+			productName = "Tap That Beat WatchKit Extension";
+			productReference = 46D9C92C2127508700C2021C /* Tap That Beat WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46D9C8ED2127508400C2021C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					46D9C8F42127508400C2021C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					46D9C9082127508600C2021C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 46D9C8F42127508400C2021C;
+					};
+					46D9C9132127508600C2021C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 46D9C8F42127508400C2021C;
+					};
+					46D9C91C2127508600C2021C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					46D9C92B2127508700C2021C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 46D9C8F02127508400C2021C /* Build configuration list for PBXProject "Tap That Beat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46D9C8EC2127508400C2021C;
+			productRefGroup = 46D9C8F62127508400C2021C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46D9C8F42127508400C2021C /* Tap That Beat */,
+				46D9C9082127508600C2021C /* Tap That BeatTests */,
+				46D9C9132127508600C2021C /* Tap That BeatUITests */,
+				46D9C91C2127508600C2021C /* Tap That Beat WatchKit App */,
+				46D9C92B2127508700C2021C /* Tap That Beat WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46D9C8F32127508400C2021C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D9C9032127508500C2021C /* LaunchScreen.storyboard in Resources */,
+				46D9C9002127508500C2021C /* Assets.xcassets in Resources */,
+				46D9C8FE2127508400C2021C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D9C9072127508600C2021C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D9C9122127508600C2021C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D9C91B2127508600C2021C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D9C9262127508700C2021C /* Assets.xcassets in Resources */,
+				46D9C9242127508600C2021C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D9C92A2127508700C2021C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D9C9382127508800C2021C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46D9C8F12127508400C2021C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D9C8FB2127508400C2021C /* ViewController.swift in Sources */,
+				46D9C8F92127508400C2021C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D9C9052127508600C2021C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D9C90E2127508600C2021C /* Tap_That_BeatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D9C9102127508600C2021C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D9C9192127508600C2021C /* Tap_That_BeatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D9C9282127508700C2021C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D9C9362127508700C2021C /* NotificationController.swift in Sources */,
+				46D9C9342127508700C2021C /* ExtensionDelegate.swift in Sources */,
+				46D9C9322127508700C2021C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46D9C90B2127508600C2021C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D9C8F42127508400C2021C /* Tap That Beat */;
+			targetProxy = 46D9C90A2127508600C2021C /* PBXContainerItemProxy */;
+		};
+		46D9C9162127508600C2021C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D9C8F42127508400C2021C /* Tap That Beat */;
+			targetProxy = 46D9C9152127508600C2021C /* PBXContainerItemProxy */;
+		};
+		46D9C9202127508600C2021C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D9C91C2127508600C2021C /* Tap That Beat WatchKit App */;
+			targetProxy = 46D9C91F2127508600C2021C /* PBXContainerItemProxy */;
+		};
+		46D9C92F2127508700C2021C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D9C92B2127508700C2021C /* Tap That Beat WatchKit Extension */;
+			targetProxy = 46D9C92E2127508700C2021C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46D9C8FC2127508400C2021C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D9C8FD2127508400C2021C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46D9C9012127508500C2021C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D9C9022127508500C2021C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		46D9C9222127508600C2021C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D9C9232127508600C2021C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46D9C93B2127508800C2021C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46D9C93C2127508800C2021C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46D9C93E2127508800C2021C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PWUU7BXRPV;
+				INFOPLIST_FILE = "Tap That Beat WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tap-That-Beat.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		46D9C93F2127508800C2021C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PWUU7BXRPV;
+				INFOPLIST_FILE = "Tap That Beat WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tap-That-Beat.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		46D9C9422127508800C2021C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PWUU7BXRPV;
+				IBSC_MODULE = Tap_That_Beat_WatchKit_Extension;
+				INFOPLIST_FILE = "Tap That Beat WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tap-That-Beat.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		46D9C9432127508800C2021C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PWUU7BXRPV;
+				IBSC_MODULE = Tap_That_Beat_WatchKit_Extension;
+				INFOPLIST_FILE = "Tap That Beat WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tap-That-Beat.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		46D9C9462127508800C2021C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PWUU7BXRPV;
+				INFOPLIST_FILE = "Tap That Beat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tap-That-Beat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46D9C9472127508800C2021C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PWUU7BXRPV;
+				INFOPLIST_FILE = "Tap That Beat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tap-That-Beat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46D9C9492127508800C2021C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PWUU7BXRPV;
+				INFOPLIST_FILE = "Tap That BeatTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tap-That-BeatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap That Beat.app/Tap That Beat";
+			};
+			name = Debug;
+		};
+		46D9C94A2127508800C2021C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PWUU7BXRPV;
+				INFOPLIST_FILE = "Tap That BeatTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tap-That-BeatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap That Beat.app/Tap That Beat";
+			};
+			name = Release;
+		};
+		46D9C94C2127508800C2021C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PWUU7BXRPV;
+				INFOPLIST_FILE = "Tap That BeatUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tap-That-BeatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tap That Beat";
+			};
+			name = Debug;
+		};
+		46D9C94D2127508800C2021C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PWUU7BXRPV;
+				INFOPLIST_FILE = "Tap That BeatUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tap-That-BeatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tap That Beat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46D9C8F02127508400C2021C /* Build configuration list for PBXProject "Tap That Beat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D9C93B2127508800C2021C /* Debug */,
+				46D9C93C2127508800C2021C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D9C93D2127508800C2021C /* Build configuration list for PBXNativeTarget "Tap That Beat WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D9C93E2127508800C2021C /* Debug */,
+				46D9C93F2127508800C2021C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D9C9412127508800C2021C /* Build configuration list for PBXNativeTarget "Tap That Beat WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D9C9422127508800C2021C /* Debug */,
+				46D9C9432127508800C2021C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D9C9452127508800C2021C /* Build configuration list for PBXNativeTarget "Tap That Beat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D9C9462127508800C2021C /* Debug */,
+				46D9C9472127508800C2021C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D9C9482127508800C2021C /* Build configuration list for PBXNativeTarget "Tap That BeatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D9C9492127508800C2021C /* Debug */,
+				46D9C94A2127508800C2021C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D9C94B2127508800C2021C /* Build configuration list for PBXNativeTarget "Tap That BeatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D9C94C2127508800C2021C /* Debug */,
+				46D9C94D2127508800C2021C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46D9C8ED2127508400C2021C /* Project object */;
+}
