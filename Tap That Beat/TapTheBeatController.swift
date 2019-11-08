@@ -1,38 +1,32 @@
 //
-//  TapTheBeatInterfaceController.swift
-//  Tap The Beat WatchKit Extension
+//  TapThatBeatController.swift
+//  Tap That Beat
 //
 //  Created by JHartl on 8/10/18.
 //  Copyright © 2018 Ecerea. All rights reserved.
 //
 
-import WatchKit
-import Foundation
+import UIKit
 
-class TapTheBeatInterfaceController: WKInterfaceController {
-    
+class TapTheBeatController: UIViewController {
     //MARK: - Outlets
-    @IBOutlet var BPMLabel: WKInterfaceLabel!
-    @IBOutlet var beatButton: WKInterfaceButton!
+    
+    @IBOutlet weak var BPMLabel: UILabel!
+    @IBOutlet weak var tapButton: UIButton!
     
     //MARK: - Properties
     var timeIntervals: [TimeInterval] = []
     var currentDate: Date?
     
-    override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-        BPMLabel.setText("          ")
-        
-        
+    //MARK: - Methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tapButton.showsTouchWhenHighlighted = true
+        BPMLabel.text = "     "
     }
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-    
-    
-    @IBAction func beatTapped() {
+    @IBAction func buttonTapped(_ sender: Any) {
+        //Steps
         //1. Upon second tap stops current date object and stores TimeInterval. If this is nil, will not execute.
         let now = Date()
         if let timeInterval = currentDate?.timeIntervalSince(now) {
@@ -48,18 +42,10 @@ class TapTheBeatInterfaceController: WKInterfaceController {
             let averageTime = sumArray / Double(timeIntervals.count)
             let beatsPerMin = 60 / averageTime
             let beatString = String(Int(beatsPerMin))
-            BPMLabel.setText("\(beatString) BPM")
+            BPMLabel.text = "\(beatString) BPM"
             timeIntervals = []
         }
-        
     }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-        timeIntervals = []
-        currentDate = nil
-        BPMLabel.setText("        ")
-    }
-    
 }
+
+

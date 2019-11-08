@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		46D9C8F92127508400C2021C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C8F82127508400C2021C /* AppDelegate.swift */; };
-		46D9C8FB2127508400C2021C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C8FA2127508400C2021C /* ViewController.swift */; };
 		46D9C8FE2127508400C2021C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C8FC2127508400C2021C /* Main.storyboard */; };
 		46D9C9002127508500C2021C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C8FF2127508500C2021C /* Assets.xcassets */; };
 		46D9C9032127508500C2021C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C9012127508500C2021C /* LaunchScreen.storyboard */; };
@@ -18,10 +17,11 @@
 		46D9C9242127508600C2021C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C9222127508600C2021C /* Interface.storyboard */; };
 		46D9C9262127508700C2021C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C9252127508700C2021C /* Assets.xcassets */; };
 		46D9C92D2127508700C2021C /* Tap That Beat WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46D9C92C2127508700C2021C /* Tap That Beat WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		46D9C9322127508700C2021C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C9312127508700C2021C /* InterfaceController.swift */; };
 		46D9C9342127508700C2021C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C9332127508700C2021C /* ExtensionDelegate.swift */; };
 		46D9C9362127508700C2021C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C9352127508700C2021C /* NotificationController.swift */; };
 		46D9C9382127508800C2021C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D9C9372127508800C2021C /* Assets.xcassets */; };
+		46D9C94F212751CC00C2021C /* TapTheBeatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C94E212751CC00C2021C /* TapTheBeatController.swift */; };
+		46D9C951212753A700C2021C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9C950212753A600C2021C /* InterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +83,6 @@
 /* Begin PBXFileReference section */
 		46D9C8F52127508400C2021C /* Tap That Beat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap That Beat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D9C8F82127508400C2021C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46D9C8FA2127508400C2021C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46D9C8FD2127508400C2021C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46D9C8FF2127508500C2021C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46D9C9022127508500C2021C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,12 +98,13 @@
 		46D9C9252127508700C2021C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46D9C9272127508700C2021C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D9C92C2127508700C2021C /* Tap That Beat WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tap That Beat WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		46D9C9312127508700C2021C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		46D9C9332127508700C2021C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		46D9C9352127508700C2021C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		46D9C9372127508800C2021C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46D9C9392127508800C2021C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D9C93A2127508800C2021C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		46D9C94E212751CC00C2021C /* TapTheBeatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapTheBeatController.swift; sourceTree = "<group>"; };
+		46D9C950212753A600C2021C /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				46D9C8F82127508400C2021C /* AppDelegate.swift */,
-				46D9C8FA2127508400C2021C /* ViewController.swift */,
+				46D9C94E212751CC00C2021C /* TapTheBeatController.swift */,
 				46D9C8FC2127508400C2021C /* Main.storyboard */,
 				46D9C8FF2127508500C2021C /* Assets.xcassets */,
 				46D9C9012127508500C2021C /* LaunchScreen.storyboard */,
@@ -207,7 +207,7 @@
 		46D9C9302127508700C2021C /* Tap That Beat WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				46D9C9312127508700C2021C /* InterfaceController.swift */,
+				46D9C950212753A600C2021C /* InterfaceController.swift */,
 				46D9C9332127508700C2021C /* ExtensionDelegate.swift */,
 				46D9C9352127508700C2021C /* NotificationController.swift */,
 				46D9C9372127508800C2021C /* Assets.xcassets */,
@@ -408,8 +408,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46D9C8FB2127508400C2021C /* ViewController.swift in Sources */,
 				46D9C8F92127508400C2021C /* AppDelegate.swift in Sources */,
+				46D9C94F212751CC00C2021C /* TapTheBeatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,9 +433,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D9C951212753A700C2021C /* InterfaceController.swift in Sources */,
 				46D9C9362127508700C2021C /* NotificationController.swift in Sources */,
 				46D9C9342127508700C2021C /* ExtensionDelegate.swift in Sources */,
-				46D9C9322127508700C2021C /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
